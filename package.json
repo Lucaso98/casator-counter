@@ -6,6 +6,7 @@
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
+    "start": "node .svelte-kit/runtime/server/index.js",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -13,6 +14,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-node": "^1.0.0-next.68",
     "@sveltejs/kit": "next",
     "@types/cookie": "^0.4.1",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
@@ -37,6 +39,7 @@
     "@lukeed/uuid": "^2.0.0",
     "@tailwindcss/forms": "^0.4.0",
     "cookie": "^0.4.1",
+    "express": "^4.17.2",
     "svelte-awesome": "^2.4.4"
   }
 }
